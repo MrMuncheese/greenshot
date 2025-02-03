@@ -21,7 +21,16 @@ Being easy to understand and configurable, Greenshot is an efficient tool for pr
 
 About this repository
 ---------------------
-This repository is for Greenshot 1.3, currently in development, but is the next planned release
+This repository is for Greenshot 1.4 UNOFFICAL, currently in development, but is the next planned release
+
+Containing follow new features:
+- Bezier curve for line an arrowline
+- Polygon drawing tool
+- SVG stamp tool
+- SVG library
+- UI (Dark) Theming
+- Rounded polygons (including existing rectangle)
+- 
 
 Releases
 --------
