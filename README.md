@@ -24,13 +24,13 @@ About this repository
 This repository is for Greenshot 1.4 UNOFFICAL, currently in development, but is the next planned release
 
 Containing follow new features:
-- Bezier curve for line an arrowline
-- Polygon drawing tool
-- SVG stamp tool
-- SVG library
-- UI (Dark) Theming
-- Rounded polygons (including existing rectangle)
-- 
+- Add Bezier curve support for line and arrowline tools
+- Add a Polygon drawing tool (incl. editing and roating)
+- Add SVG stamp tool (The Vector image tool is present already in the code, but not used?)
+- Add SVG library (A side toolbar showing SVG's from a given folder)
+- Add UI (Dark) Theming
+- Add rounded polygons (including existing rectangle)
+- Add rotation support for all tools
 
 Releases
 --------
