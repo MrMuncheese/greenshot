@@ -185,7 +185,8 @@ namespace Greenshot.Editor.Forms {
 			this.arrowHeadBothMenuItem = new GreenshotToolStripMenuItem();
 			this.arrowHeadNoneMenuItem = new GreenshotToolStripMenuItem();
 			this.shadowButton = new BindableToolStripButton();
-			this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bezierButton = new BindableToolStripButton();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
 			this.btnConfirm = new BindableToolStripButton();
 			this.btnCancel = new BindableToolStripButton();
@@ -1068,7 +1069,8 @@ namespace Greenshot.Editor.Forms {
 									this.arrowHeadsLabel,
 									this.arrowHeadsDropDownButton,
 									this.shadowButton,
-									this.toolStripSeparator,
+                                    this.bezierButton,
+                                    this.toolStripSeparator,
 									this.toolStripSeparator10,
 									this.btnConfirm,
 									this.btnCancel,
@@ -1593,10 +1595,19 @@ namespace Greenshot.Editor.Forms {
 			this.shadowButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.shadowButton.LanguageKey = "editor_shadow";
 			this.shadowButton.Name = "shadowButton";
-			// 
-			// toolStripSeparator
-			// 
-			this.toolStripSeparator.Name = "toolStripSeparator";
+            // 
+            // shadowButton
+            // 
+            this.bezierButton.CheckOnClick = true;
+            this.bezierButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bezierButton.Image = ((System.Drawing.Image)(resources.GetObject("Vector.Image")));
+            this.bezierButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.bezierButton.LanguageKey = "editor_bezier";
+            this.bezierButton.Name = "bezierButton";
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
 			// 
 			// toolStripSeparator10
 			// 
@@ -1931,7 +1942,8 @@ namespace Greenshot.Editor.Forms {
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
 		private BindableToolStripButton shadowButton;
-		private BindableToolStripButton fontItalicButton;
+        private BindableToolStripButton bezierButton;
+        private BindableToolStripButton fontItalicButton;
 		private BindableToolStripButton fontBoldButton;
 		private ToolStripNumericUpDown fontSizeUpDown;
 		private GreenshotToolStripLabel fontSizeLabel;

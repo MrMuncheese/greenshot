@@ -500,7 +500,8 @@ namespace Greenshot.Editor.Drawing
             _parent?.MakeUndoable(new DrawableContainerBoundsChangeMemento(this), allowMerge);
         }
 
-        public void MoveBy(int dx, int dy)
+        // Made this method Virtual so it can be overridden
+        public virtual void MoveBy(int dx, int dy)
         {
             Left += dx;
             Top += dy;

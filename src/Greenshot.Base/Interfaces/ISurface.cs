@@ -231,6 +231,7 @@ namespace Greenshot.Base.Interfaces
         /// </summary>
         /// <param name="point">NativePoint in the coordinate space of the surface.</param>
         NativePoint ToImageCoordinates(NativePoint point);
+        PointF ToImageCoordinates(PointF point);
 
         /// <summary>
         /// Translate a NativeRect from surface coordinate space to image coordinate space.

@@ -2742,6 +2742,16 @@ namespace Greenshot.Editor.Drawing
             return points[0];
         }
 
+        public PointF ToImageCoordinates(PointF point)
+        {
+            PointF[] points =
+            {
+                point
+            };
+            _inverseZoomMatrix.TransformPoints(points);
+            return points[0];
+        }
+
         public NativeRect ToImageCoordinates(NativeRect rc)
         {
             if (_inverseZoomMatrix.IsIdentity)
